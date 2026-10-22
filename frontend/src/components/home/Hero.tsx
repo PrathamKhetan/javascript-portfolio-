@@ -83,12 +83,12 @@ export const Hero: React.FC = () => {
             className="select-none"
           >
             {/* First Name - Filled */}
-            <div className="overflow-hidden flex flex-wrap leading-none">
+            <div className="overflow-hidden flex flex-nowrap items-center gap-1.5 sm:gap-2.5 md:gap-3 lg:gap-4 leading-none pb-1 sm:pb-2">
               {firstNameLetters.map((letter, idx) => (
                 <motion.span
                   key={`first-${idx}`}
                   variants={letterVariants}
-                  className="font-heading font-extrabold text-[15vw] sm:text-[13vw] lg:text-[9.5vw] tracking-tighter text-[var(--text-color)] inline-block uppercase"
+                  className="font-heading font-extrabold text-[10vw] sm:text-[8vw] md:text-[6.5vw] lg:text-[5.4vw] xl:text-[5.8vw] tracking-normal text-[var(--text-color)] inline-block uppercase select-none"
                 >
                   {letter}
                 </motion.span>
@@ -96,12 +96,12 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Last Name - Outlined */}
-            <div className="overflow-hidden flex flex-wrap leading-none -mt-2 sm:-mt-4 lg:-mt-6">
+            <div className="overflow-hidden flex flex-nowrap items-center gap-1.5 sm:gap-2.5 md:gap-3 lg:gap-4 leading-none mt-3 sm:mt-5 lg:mt-6">
               {lastNameLetters.map((letter, idx) => (
                 <motion.span
                   key={`last-${idx}`}
                   variants={letterVariants}
-                  className="font-heading font-extrabold text-[15vw] sm:text-[13vw] lg:text-[9.5vw] tracking-tighter text-outline inline-block uppercase hover:text-[var(--accent-color)] transition-colors duration-300"
+                  className="font-heading font-extrabold text-[10vw] sm:text-[8vw] md:text-[6.5vw] lg:text-[5.4vw] xl:text-[5.8vw] tracking-normal text-outline inline-block uppercase select-none hover:text-[var(--accent-color)] transition-colors duration-300"
                 >
                   {letter}
                 </motion.span>

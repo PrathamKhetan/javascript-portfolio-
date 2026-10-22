@@ -11,28 +11,30 @@ export const AboutStatement: React.FC = () => {
 
   // Helper to highlight words from profile.aboutHighlights
   const renderStatementWithHighlights = () => {
-    let text = profile.aboutStatement || '';
-    const highlights = profile.aboutHighlights || [];
+    const text = profile.aboutStatement || '';
+    const highlights = (profile.aboutHighlights || []).map((h) => h.toLowerCase());
 
-    // Simple replacement with stylized spans
+    const words = text.split(/\s+/);
     return (
-      <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-medium leading-[1.3] text-[var(--text-color)]">
-        {text.split(' ').map((word, idx) => {
-          const cleanWord = word.replace(/[.,]/g, '').toLowerCase();
-          const isHighlighted = highlights.some((h) =>
-            h.toLowerCase().includes(cleanWord)
-          );
+      <p className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.6rem] font-heading font-medium leading-[1.65] md:leading-[1.75] text-[var(--text-color)] tracking-normal">
+        {words.map((word, idx) => {
+          const cleanWord = word.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+          const isHighlighted =
+            cleanWord.length > 3 &&
+            highlights.some((h) => h.includes(cleanWord));
           return (
-            <span
-              key={idx}
-              className={
-                isHighlighted
-                  ? 'text-[var(--accent-color)] font-semibold inline-block transition-colors hover:underline decoration-2 underline-offset-8'
-                  : 'text-[var(--text-color)]/90 inline-block'
-              }
-            >
-              {word}{' '}
-            </span>
+            <React.Fragment key={idx}>
+              <span
+                className={
+                  isHighlighted
+                    ? 'text-[var(--accent-color)] font-semibold transition-colors hover:underline decoration-2 underline-offset-8'
+                    : 'text-[var(--text-color)]/90'
+                }
+              >
+                {word}
+              </span>
+              {' '}
+            </React.Fragment>
           );
         })}
       </p>
