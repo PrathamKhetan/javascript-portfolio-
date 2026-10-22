@@ -81,7 +81,7 @@ export const AboutStatement: React.FC = () => {
             className="space-y-2 p-6 rounded-2xl bg-[var(--surface-color)] border border-[var(--border-color)]"
           >
             <div className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-[var(--accent-color)]">
-              <CountUpNumber value={profile.stats.projects} suffix="+" />
+              <CountUpNumber value={profile.stats?.projects ?? 15} suffix="+" />
             </div>
             <p className="font-mono text-xs uppercase tracking-wider text-[var(--muted-color)]">
               Completed Projects
@@ -100,7 +100,7 @@ export const AboutStatement: React.FC = () => {
             className="space-y-2 p-6 rounded-2xl bg-[var(--surface-color)] border border-[var(--border-color)]"
           >
             <div className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-[var(--text-color)]">
-              <CountUpNumber value={profile.stats.cgpa} decimals={1} suffix=" /10" />
+              <CountUpNumber value={profile.stats?.cgpa ?? 9.0} decimals={1} suffix=" /10" />
             </div>
             <p className="font-mono text-xs uppercase tracking-wider text-[var(--muted-color)]">
               Cumulative CGPA
@@ -119,7 +119,7 @@ export const AboutStatement: React.FC = () => {
             className="space-y-2 p-6 rounded-2xl bg-[var(--surface-color)] border border-[var(--border-color)]"
           >
             <div className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-[var(--accent-color)]">
-              <CountUpNumber value={profile.stats.certificates} suffix="+" />
+              <CountUpNumber value={profile.stats?.certificates ?? 12} suffix="+" />
             </div>
             <p className="font-mono text-xs uppercase tracking-wider text-[var(--muted-color)]">
               Verified Credentials
@@ -138,7 +138,7 @@ export const AboutStatement: React.FC = () => {
             className="space-y-2 p-6 rounded-2xl bg-[var(--surface-color)] border border-[var(--border-color)]"
           >
             <div className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-[var(--text-color)]">
-              <CountUpNumber value={profile.stats.hackathons} suffix="+" />
+              <CountUpNumber value={profile.stats?.hackathons ?? 6} suffix="+" />
             </div>
             <p className="font-mono text-xs uppercase tracking-wider text-[var(--muted-color)]">
               Hackathons & Contests

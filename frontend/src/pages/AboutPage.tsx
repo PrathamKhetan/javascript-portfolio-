@@ -64,7 +64,7 @@ export const AboutPage: React.FC = () => {
 
           {/* Quick-Fact Cards */}
           <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {profile.quickFacts.map((fact, idx) => (
+            {(profile.quickFacts || []).map((fact, idx) => (
               <motion.div
                 key={fact.label}
                 initial={{ opacity: 0, y: 20 }}
@@ -96,7 +96,7 @@ export const AboutPage: React.FC = () => {
           />
 
           <div className="space-y-12">
-            {profile.skills.map((categoryGroup, catIdx) => (
+            {(profile.skills || []).map((categoryGroup, catIdx) => (
               <motion.div
                 key={categoryGroup.category}
                 initial={{ opacity: 0, y: 20 }}

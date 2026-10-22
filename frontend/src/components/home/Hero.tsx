@@ -170,7 +170,7 @@ export const Hero: React.FC = () => {
         {/* Top Marquee (Scrolling Left) */}
         <div className="w-full bg-[var(--surface-color)] border-y border-[var(--border-color)] py-2.5 overflow-hidden">
           <div className="flex whitespace-nowrap animate-marquee-left">
-            {[...profile.marqueeRolesTop, ...profile.marqueeRolesTop].map((role, i) => (
+            {[...(profile.marqueeRolesTop || []), ...(profile.marqueeRolesTop || [])].map((role, i) => (
               <span
                 key={`top-${i}`}
                 className="font-mono text-xs sm:text-sm uppercase tracking-widest text-[var(--text-color)] px-6 flex items-center gap-4"
@@ -185,7 +185,7 @@ export const Hero: React.FC = () => {
         {/* Bottom Marquee (Scrolling Right) */}
         <div className="w-full bg-[var(--card-color)] border-y border-[var(--border-color)] py-2.5 overflow-hidden">
           <div className="flex whitespace-nowrap animate-marquee-right">
-            {[...profile.marqueeRolesBottom, ...profile.marqueeRolesBottom].map((role, i) => (
+            {[...(profile.marqueeRolesBottom || []), ...(profile.marqueeRolesBottom || [])].map((role, i) => (
               <span
                 key={`bottom-${i}`}
                 className="font-mono text-xs sm:text-sm uppercase tracking-widest text-[var(--muted-color)] px-6 flex items-center gap-4"

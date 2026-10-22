@@ -28,7 +28,15 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
       }
     }, 25);
 
-    return () => clearInterval(interval);
+    const safetyTimeout = setTimeout(() => {
+      setIsFinished(true);
+      onComplete();
+    }, 2500);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(safetyTimeout);
+    };
   }, [onComplete]);
 
   return (
@@ -49,7 +57,7 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
               <span className="w-2 h-2 rounded-full bg-dark-accent animate-ping" />
               SYSTEM INITIALIZING
             </span>
-            <span>PORTFOLIO // 2025</span>
+            <span>PORTFOLIO // 2026</span>
           </div>
 
           {/* Center Counter */}

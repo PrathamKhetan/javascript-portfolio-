@@ -32,10 +32,21 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         fetchCertificates(),
       ]);
 
-      setProfile(profData);
-      setProjects(projData);
-      setCertificates(certData.certificates);
-      setAchievements(certData.achievements);
+      setProfile({
+        ...initialProfileData,
+        ...profData,
+        socials: { ...initialProfileData.socials, ...(profData?.socials || {}) },
+        stats: { ...initialProfileData.stats, ...(profData?.stats || {}) },
+        marqueeRolesTop: profData?.marqueeRolesTop || initialProfileData.marqueeRolesTop,
+        marqueeRolesBottom: profData?.marqueeRolesBottom || initialProfileData.marqueeRolesBottom,
+        quickFacts: profData?.quickFacts || initialProfileData.quickFacts,
+        skills: profData?.skills || initialProfileData.skills,
+        introParagraphs: profData?.introParagraphs || initialProfileData.introParagraphs,
+        aboutHighlights: profData?.aboutHighlights || initialProfileData.aboutHighlights,
+      });
+      setProjects(projData && projData.length > 0 ? projData : initialProjectsData);
+      setCertificates(certData?.certificates && certData.certificates.length > 0 ? certData.certificates : initialCertificatesData);
+      setAchievements(certData?.achievements && certData.achievements.length > 0 ? certData.achievements : initialAchievementsData);
     } catch {
       // Fallback already handled inside services/api
     } finally {
