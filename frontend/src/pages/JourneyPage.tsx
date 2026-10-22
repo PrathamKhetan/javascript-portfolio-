@@ -11,6 +11,7 @@ export const JourneyPage: React.FC = () => {
       case 'Internship':
         return <Briefcase className="w-4 h-4 text-[var(--accent-color)]" />;
       case 'Club':
+      case 'Leadership':
         return <Users className="w-4 h-4 text-[var(--accent-color)]" />;
       case 'Volunteering':
         return <HeartHandshake className="w-4 h-4 text-[var(--accent-color)]" />;

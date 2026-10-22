@@ -12,7 +12,7 @@ export const WorkPage: React.FC = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   // Extract unique categories
-  const categories = ['All', 'Cloud', 'AI', 'Full Stack', 'Engineering'];
+  const categories = ['All', 'Cybersecurity', 'AI', 'Database', 'Engineering'];
 
   const filteredProjects = projects.filter((project) => {
     if (activeCategory === 'All') return true;

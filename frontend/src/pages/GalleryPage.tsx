@@ -44,7 +44,7 @@ export const GalleryPage: React.FC = () => {
           number="01"
           label="Visual Moments"
           title="Campus & Event Gallery"
-          subtitle="Glimpses from hackathon stages, collegiate symposiums, code sprints, and community workshops."
+          subtitle="Glimpses from Tata Power cybersecurity internship, Advantage Vidarbha international diplomatic summits, and campus leadership."
         />
 
         {/* Masonry-style Grid */}

@@ -103,7 +103,7 @@ export interface JourneyTimelineItem {
   period: string;
   role: string;
   organization: string;
-  category: 'Internship' | 'Club' | 'Volunteering' | 'Event';
+  category: 'Internship' | 'Club' | 'Volunteering' | 'Event' | 'Leadership';
   description: string;
   achievements: string[];
 }

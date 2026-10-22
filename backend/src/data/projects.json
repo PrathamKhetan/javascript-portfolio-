@@ -1,84 +1,56 @@
 [
   {
     "id": "proj-1",
-    "slug": "nexus-cloud-orchestrator",
+    "slug": "ai-assisted-url-vulnerability-scanner",
     "number": "01",
-    "title": "Nexus Cloud Orchestrator",
-    "category": "Cloud Infrastructure & Distributed Systems",
-    "year": "2024",
-    "summary": "A distributed container monitoring and auto-scaling telemetry control plane with real-time WebSocket metrics and predictive load heuristics.",
-    "role": "Lead Full Stack & Systems Engineer",
-    "techStack": ["TypeScript", "React 19", "Node.js", "Docker", "Redis", "Tailwind CSS", "Chart.js"],
-    "isFeatured": true,
-    "liveUrl": "https://example.com/demo/nexus",
-    "githubUrl": "https://github.com/your-username/nexus-cloud-orchestrator",
-    "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
-    "heroImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1600&q=80",
-    "screenshots": [
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+    "title": "AI-Assisted URL Vulnerability Scanner",
+    "category": "Cybersecurity & Web Application Security",
+    "year": "2026",
+    "summary": "A URL-based vulnerability scanner and forensic report generator focused on OWASP Top 10 web security, automated threat detection, and header analysis.",
+    "role": "Lead Cybersecurity Developer",
+    "techStack": [
+      "Python",
+      "OWASP Top 10",
+      "Requests",
+      "BeautifulSoup",
+      "Regular Expressions",
+      "Security Auditing"
     ],
-    "overview": "Nexus is an enterprise-grade telemetry dashboard and container scaling daemon built for modern microservice clusters.",
-    "challenge": "Handling concurrent streams of heartbeats and node telemetry without degrading UI render frames.",
-    "solution": "Architected a dual-buffer WebSocket client in React combined with an in-memory Redis ring buffer on the backend.",
-    "keyFeatures": [
-      "Real-time bidirectional WebSocket metric streaming with automatic reconnection",
-      "Intelligent heuristic scaling recommendations based on sliding window CPU/RAM utilization",
-      "Zero-trust RBAC cluster authentication with fine-grained API scopes"
-    ]
+    "isFeatured": true,
+    "liveUrl": "https://github.com/PrathamKhetan",
+    "githubUrl": "https://github.com/PrathamKhetan",
+    "thumbnail": "/gallery/photo-page-16.jpeg",
+    "heroImage": "/gallery/photo-page-16.jpeg",
+    "screenshots": [
+      "/gallery/photo-page-16.jpeg",
+      "/gallery/photo-page-24.jpeg"
+    ],
+    "overview": "Developed a URL-based vulnerability scanner and security analyzer designed to probe web targets for security misconfigurations, insecure HTTP headers, injection vectors, and path traversal vulnerabilities."
   },
   {
     "id": "proj-2",
-    "slug": "aura-ai-copilot",
+    "slug": "univsafenet-student-database-management-system",
     "number": "02",
-    "title": "Aura Neural Code Copilot",
-    "category": "Applied Artificial Intelligence & Developer Tooling",
-    "year": "2024",
-    "summary": "Context-aware developer workspace and intelligent code audit assistant powered by large language models with automated AST parsing.",
-    "role": "Full Stack AI Engineer",
-    "techStack": ["Next.js 15", "TypeScript", "Python", "FastAPI", "PostgreSQL", "Tailwind CSS", "Prisma"],
-    "isFeatured": true,
-    "liveUrl": "https://example.com/demo/aura",
-    "githubUrl": "https://github.com/your-username/aura-ai-copilot",
-    "thumbnail": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
-    "heroImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1600&q=80",
-    "screenshots": [
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80"
+    "title": "UnivSafeNet \u2013 Student Database Management System",
+    "category": "Secure Systems & Database Engineering",
+    "year": "2025",
+    "summary": "A secure database application engineered for storing, updating, and retrieving university student records with parameterized queries and access control.",
+    "role": "Database & Backend Developer",
+    "techStack": [
+      "Python",
+      "SQL",
+      "Relational DBMS",
+      "Role-Based Access Control",
+      "Data Integrity"
     ],
-    "overview": "Aura is an interactive developer workbench that parses repository abstract syntax trees (AST) to generate context-grounded refactoring suggestions.",
-    "challenge": "Minimizing token overhead while passing multi-file repository context to LLM APIs.",
-    "solution": "Designed a vector chunking pipeline utilizing tree-sitter AST nodes to extract only relevant signatures.",
-    "keyFeatures": [
-      "Semantic codebase search across thousands of files using vector embeddings",
-      "Instant security scanner highlighting SQL injection vulnerabilities",
-      "One-click pull request code summary generator"
-    ]
-  },
-  {
-    "id": "proj-3",
-    "slug": "velox-fintech-ledger",
-    "number": "03",
-    "title": "Velox High-Throughput Ledger",
-    "category": "Financial Technology & Transaction Engines",
-    "year": "2023",
-    "summary": "Double-entry bookkeeping engine with cryptographic audit trails, handling simulated high-concurrency micro-settlements with ACID guarantees.",
-    "role": "Backend Architect & Database Designer",
-    "techStack": ["Node.js", "Express", "TypeScript", "PostgreSQL", "Docker", "Jest", "Tailwind CSS"],
     "isFeatured": true,
-    "liveUrl": "https://example.com/demo/velox",
-    "githubUrl": "https://github.com/your-username/velox-fintech-ledger",
-    "thumbnail": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1200&q=80",
-    "heroImage": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1600&q=80",
+    "liveUrl": "https://github.com/PrathamKhetan/DBMS-LAB",
+    "githubUrl": "https://github.com/PrathamKhetan/DBMS-LAB",
+    "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80",
     "screenshots": [
-      "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1200&q=80"
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
     ],
-    "overview": "Velox is a hardened transactional banking engine implementing pure double-entry ledger bookkeeping.",
-    "challenge": "Preventing race conditions and balance overdrafts during concurrent write surges.",
-    "solution": "Engineered pessimistic row-level locking on account balances coupled with serialized transaction isolation levels.",
-    "keyFeatures": [
-      "Strict double-entry bookkeeping guarantees (Assets = Liabilities + Equity)",
-      "Cryptographic merkle-tree verification for transaction batch integrity",
-      "Comprehensive REST API with idempotency key deduplication headers"
-    ]
+    "overview": "UnivSafeNet is a robust student database management platform built to centralize student academic profiles, course registrations, and attendance metrics while maintaining strict data consistency."
   }
 ]

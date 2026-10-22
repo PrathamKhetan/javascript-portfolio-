@@ -3,41 +3,41 @@ import { EducationTimelineItem, SemesterGrade } from '../types';
 export const initialEducationTimeline: EducationTimelineItem[] = [
   {
     id: "edu-1",
-    degree: "Bachelor of Technology in Computer Science & Engineering",
-    institution: "Premier Technical University / Institute of Technology",
-    period: "2022 — 2026",
-    grade: "Cumulative GPA: 9.2 / 10.0",
-    status: "Currently in 4th Year (8th Semester)",
+    degree: "Bachelor of Technology in Computer Science & Engineering (AI & ML)",
+    institution: "Symbiosis Institute of Technology (SIT), Nagpur",
+    period: "2024 — Expected 2028",
+    grade: "Major: Artificial Intelligence and Machine Learning",
+    status: "Currently Enrolled (Undergraduate Scholar)",
     highlights: [
-      "Specialization in Distributed Systems & Cloud Computing",
-      "Executive Core Committee Member at Developer Student Club",
-      "Key Coursework: Data Structures & Algorithms, Operating Systems, Database Management Systems, Computer Networks, Software Engineering, Compiler Design, Distributed Systems"
+      "Vice President – Student Placement Representative, coordinating campus placement drives and corporate relations",
+      "Lead, Communication and Media Cell, leading event coordination and student-focused initiatives",
+      "Core Coursework: Data Structures & Algorithms, Database Management Systems, Programming in C, Python, Operating Systems, Machine Learning",
+      "McKinsey Forward Program Campus Coordinator, engaging over 270 students"
     ]
   },
   {
     id: "edu-2",
-    degree: "Senior Secondary Certificate (Class XII — PCM with CS)",
-    institution: "Delhi Public School / Model Senior Secondary School",
-    period: "2020 — 2022",
-    grade: "Aggregated Percentage: 94.6%",
-    status: "Completed with Distinction",
+    degree: "Senior Secondary School Certificate (Class XII — Science / PCM)",
+    institution: "Central Board of Secondary Education (CBSE)",
+    period: "2022 — 2024",
+    grade: "Completed with First Class Distinction",
+    status: "Completed",
     highlights: [
-      "Subject Topper in Computer Science (98/100) and Mathematics (95/100)",
-      "School Science & Tech Club President; Organized annual inter-school coding Olympiad",
-      "Awarded Certificate of Merit for Academic Brilliance"
+      "Rigorous preparation in Physics, Chemistry, and Advanced Mathematics",
+      "Active participant in collegiate hackathons, robotics, and algorithmic workshops",
+      "Awarded Certificate of Merit for Academic Performance"
     ]
   },
   {
     id: "edu-3",
-    degree: "Secondary School Certificate (Class X)",
-    institution: "Delhi Public School / Model Senior Secondary School",
-    period: "2018 — 2020",
-    grade: "Aggregated Percentage: 96.2%",
-    status: "Completed with Distinction",
+    degree: "Secondary School Examination (Class X)",
+    institution: "Central Board of Secondary Education (CBSE)",
+    period: "2020 — 2022",
+    grade: "Completed with Distinction",
+    status: "Completed",
     highlights: [
-      "Ranked in top 1% across regional board examinations",
-      "Won Regional Inter-School Mathematics & Science Quiz competitions",
-      "Active participant in STEM Robotics and debate tournaments"
+      "Foundation in Mathematics, Computer Basics, and General Sciences",
+      "Active participant in extracurricular science exhibitions, debate, and youth leadership forums"
     ]
   }
 ];
@@ -45,38 +45,26 @@ export const initialEducationTimeline: EducationTimelineItem[] = [
 export const initialSemesterGrades: SemesterGrade[] = [
   {
     semester: "Semester 1",
-    gpa: 9.10,
+    gpa: 8.90,
     maxGpa: 10.0,
-    courses: ["Programming with C", "Calculus & Linear Algebra", "Engineering Physics", "Basics of Electrical & Electronics"]
+    courses: ["Programming with C", "Engineering Mathematics & Calculus", "Basic Electrical & Electronics", "Engineering Physics"]
   },
   {
     semester: "Semester 2",
-    gpa: 9.35,
+    gpa: 9.15,
     maxGpa: 10.0,
-    courses: ["Object Oriented Programming (C++)", "Discrete Mathematics", "Data Structures Fundamentals", "Digital Logic Design"]
+    courses: ["Data Structures & Algorithms", "Python Programming", "Discrete Mathematics", "Digital Electronics"]
   },
   {
     semester: "Semester 3",
-    gpa: 9.20,
+    gpa: 9.05,
     maxGpa: 10.0,
-    courses: ["Advanced Data Structures & Algorithms", "Computer Organization & Architecture", "Python Programming", "Probability & Statistics"]
+    courses: ["Database Management Systems (DBMS)", "Operating Systems", "Computer Organization & Architecture", "Probability & Statistics"]
   },
   {
     semester: "Semester 4",
-    gpa: 9.40,
+    gpa: 9.20,
     maxGpa: 10.0,
-    courses: ["Database Management Systems (SQL & Relational)", "Operating Systems & Shell Scripting", "Theory of Computation", "Design & Analysis of Algorithms"]
-  },
-  {
-    semester: "Semester 5",
-    gpa: 9.25,
-    maxGpa: 10.0,
-    courses: ["Computer Networks & Protocols", "Web Technologies & Full Stack Dev", "Software Engineering & Agile", "Microprocessors & Interfacing"]
-  },
-  {
-    semester: "Semester 6",
-    gpa: 9.30,
-    maxGpa: 10.0,
-    courses: ["Cloud Computing & Virtualization", "Machine Learning & Neural Nets", "Compiler Design", "Information & Cyber Security"]
+    courses: ["Design & Analysis of Algorithms", "Artificial Intelligence Fundamentals", "Web Technologies & JavaScript Lab", "Software Engineering"]
   }
 ];

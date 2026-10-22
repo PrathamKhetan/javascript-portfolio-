@@ -49,15 +49,15 @@ export const AboutPage: React.FC = () => {
             <div className="pt-4 flex flex-wrap gap-4 font-mono text-xs text-[var(--text-color)]">
               <span className="flex items-center gap-2 bg-[var(--surface-color)] border border-[var(--border-color)] px-4 py-2 rounded-full">
                 <CheckCircle2 className="w-4 h-4 text-[var(--accent-color)]" />
-                Undergraduate Scholar
+                Cybersecurity & AppSec Practitioner
               </span>
               <span className="flex items-center gap-2 bg-[var(--surface-color)] border border-[var(--border-color)] px-4 py-2 rounded-full">
                 <CheckCircle2 className="w-4 h-4 text-[var(--accent-color)]" />
-                Distributed Systems Enthusiast
+                Tata Power Cyber Security Intern
               </span>
               <span className="flex items-center gap-2 bg-[var(--surface-color)] border border-[var(--border-color)] px-4 py-2 rounded-full">
                 <CheckCircle2 className="w-4 h-4 text-[var(--accent-color)]" />
-                High Code Standard Devotee
+                Symbiosis Institute of Technology
               </span>
             </div>
           </motion.div>

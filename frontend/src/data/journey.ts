@@ -3,97 +3,110 @@ import { JourneyTimelineItem } from '../types';
 export const initialAspirations = {
   interests: [
     {
-      title: "Distributed Systems & Cloud Architecture",
-      desc: "Designing resilient, horizontally scalable microservices and data pipelines that handle millions of events with fault tolerance."
+      title: "Application Security & Vulnerability Assessment",
+      desc: "Probing and fortifying enterprise web applications, APIs, and cloud services against OWASP Top 10 exploits, injection vectors, and zero-day vulnerabilities."
     },
     {
-      title: "Creative Frontend & Interaction Engineering",
-      desc: "Blending buttery-smooth motion design with strict web performance, accessibility, and high visual impact."
+      title: "Applied AI & Machine Learning in Cybersecurity",
+      desc: "Leveraging intelligent threat detection models, prompt engineering, and automated security scans to neutralize threats with sub-second response times."
     },
     {
-      title: "Developer Experience & Tooling",
-      desc: "Building developer platforms, CLI utilities, and component libraries that multiply engineering productivity."
+      title: "Student Leadership & Institutional Growth",
+      desc: "Bridging the gap between corporate recruiters and aspiring engineers as Vice President of Placement and Lead of the Communication and Media Cell."
     }
   ],
-  shortTermGoal: "Secure a challenging Software Engineering Internship or full-time role at a high-growth engineering organization where I can contribute to mission-critical backend systems and modern client-facing platforms.",
-  longTermGoal: "Grow into a Principal Systems Architect, mentoring engineering teams, open-sourcing foundational infrastructure tools, and steering technical vision for globally impactful products.",
+  shortTermGoal: "Secure an impactful Cybersecurity or AI/ML Engineering Internship where I can apply enterprise AppSec, threat hunting, and secure coding practices to protect critical infrastructure.",
+  longTermGoal: "Evolve into a Chief Information Security Officer (CISO) and Security Architect, pioneering resilient defensive architectures and empowering the next generation of technologists.",
   learningNow: [
-    "Rust for Systems Programming & High-Performance Microservices",
-    "Go concurrency primitives (goroutines, channels, sync pools)",
-    "Distributed consensus protocols (Raft, Paxos)",
-    "WebAssembly (WASM) for computational browser acceleration"
+    "Advanced Penetration Testing & Burp Suite Professional workflows",
+    "Cloud Security Architecture on AWS & Azure (IAM, VPC, CloudTrail)",
+    "MITRE ATT&CK enterprise adversary mapping",
+    "Automated CI/CD DevSecOps pipelines with SAST/DAST tooling"
   ],
   lookingFor: [
-    "Summer/Fall 2025/2026 Software Engineer Internships (Full Stack / Backend / Frontend)",
-    "Graduate Software Engineer (New Grad) Full-Time roles starting 2026",
-    "Collaborative teams with high code review standards, strong engineering culture, and mentorship"
+    "Cybersecurity / Information Security Internships & Research Fellowships",
+    "AI / Machine Learning Engineering Roles",
+    "High-impact technical environments that value proactive defense, continuous learning, and team leadership"
   ]
 };
 
 export const initialJourneyTimeline: JourneyTimelineItem[] = [
   {
     id: "journey-1",
-    period: "May 2024 — July 2024",
-    role: "Software Engineering Intern",
-    organization: "Acme Cloud Technologies",
+    period: "May 2026 — June 2026",
+    role: "Cyber Security Intern",
+    organization: "The Tata Power Company Limited (CENTEC)",
     category: "Internship",
-    description: "Collaborated directly with the Core Infrastructure team to develop internal telemetry dashboards and automated Redis caching layers.",
+    description: "Hands-on cybersecurity internship at Tata Power's Centre for Technology Excellence (CENTEC), working across enterprise IT and OT environments.",
     achievements: [
-      "Engineered an automated query caching middleware reducing average P99 database query latency by 38%",
-      "Implemented a real-time cluster health visualizer using React, WebSockets, and Tailwind CSS",
-      "Drafted comprehensive OpenAPI documentation adopted by over 20 internal engineers"
+      "Gained hands-on exposure to Application Security and Vulnerability Management across critical enterprise infrastructure.",
+      "Studied OWASP Top 10, Web Application Security, MITRE ATT&CK framework, secure development practices, and vulnerability analysis.",
+      "Explored enterprise security platforms including CrowdStrike Falcon, Cisco XDR, FortiRecon, Skyhigh DLP, AWS Security, and Zscaler.",
+      "Studied AI applications in modern cybersecurity and collaborated with senior security architects."
     ]
   },
   {
     id: "journey-2",
-    period: "Aug 2023 — Present",
-    role: "Technical Lead & Co-Organizer",
-    organization: "Google Developer Student Clubs (GDSC)",
-    category: "Club",
-    description: "Spearheaded technical workshops, campus hackathons, and open-source project initiatives for a community of 600+ student developers.",
+    period: "2025 — Present",
+    role: "Student Placement Representative – Vice President",
+    organization: "Symbiosis Institute of Technology, Nagpur",
+    category: "Leadership",
+    description: "Elected Vice President coordinating strategic recruitment initiatives, campus drives, and corporate workshops for engineering students.",
     achievements: [
-      "Mentored 80+ juniors in Git, TypeScript, and modern full-stack web development through weekly hands-on labs",
-      "Directed the annual 24-hour campus hackathon, securing sponsorships and coordinating 45 team submissions",
-      "Built the official club portal featuring automated registration and certificate verification"
+      "Coordinate placement drives, corporate technical sessions, industry workshops, and professional certification bootcamps.",
+      "Bridge strategic communication between students, company recruiters, placement coordinators, and Class Placement Representatives.",
+      "Spearheaded onboarding and resume verification initiatives for hundreds of prospective graduates."
     ]
   },
   {
     id: "journey-3",
-    period: "Jan 2023 — Present",
-    role: "Competitive Programming Core Member",
-    organization: "University ACM Student Chapter",
-    category: "Club",
-    description: "Active problem solver and contest curator conducting mock algorithmic contests and editorial breakdown sessions.",
+    period: "2025 — Present",
+    role: "Lead — Communication and Media Cell",
+    organization: "Symbiosis Institute of Technology, Nagpur",
+    category: "Leadership",
+    description: "Leading the central Communication and Media Cell in planning, coordinating, and executing student-focused events and institutional outreach.",
     achievements: [
-      "Organized bi-weekly algorithmic problem-solving contests for university cohorts",
-      "Curated curated problem sets on dynamic programming and graph theory with automated judge test suites",
-      "Represented the university in regional collegiate ICPC preliminary rounds"
+      "Led the Communication and Media Cell in planning, coordinating, and executing student-focused events and initiatives.",
+      "Successfully conducted high-visibility events impacting 100+ students through effective planning, execution, and student engagement.",
+      "Supervised media creation, press releases, and technical documentation across university channels."
     ]
   },
   {
     id: "journey-4",
-    period: "2023 — 2024",
-    role: "Volunteer & Open Source Mentor",
-    organization: "National Service Scheme & Tech Outreach",
+    period: "2025 & 2026",
+    role: "VIP Protocol & International Liaison Volunteer",
+    organization: "Advantage Vidarbha Industrial Summit & AID",
     category: "Volunteering",
-    description: "Conducted basic computer literacy and internet safety awareness programs for local community high school students.",
+    description: "Selected as official protocol liaison for foreign diplomats, trade delegates, and state dignitaries at Central India's flagship mega industrial expo.",
     achievements: [
-      "Taught fundamental computer usage and logical thinking to over 120 underprivileged youth",
-      "Assisted in refurbishing and setting up Linux systems in regional school labs",
-      "Organized an interactive hour-of-code workshop introducing web basics"
+      "Hosted and accompanied international trade delegations from Africa, Latin America, and Asia across expo forums and B2B conclaves.",
+      "Liaised with high-level dignitaries, government ministers, and corporate leaders at summit venues.",
+      "Awarded Certificate of Recognition from the Association for Industrial Development (AID) for exemplary service."
     ]
   },
   {
     id: "journey-5",
-    period: "Oct 2023",
-    role: "Invited Speaker & Workshop Lead",
-    organization: "DevFest Student Summit",
-    category: "Event",
-    description: "Delivered a 90-minute practical masterclass on 'Mastering Full Stack TypeScript and Serverless Deployments on Vercel'.",
+    period: "2026",
+    role: "Campus Coordinator & Alumni",
+    organization: "McKinsey.org Forward Program",
+    category: "Leadership",
+    description: "Alumni of the prestigious McKinsey Forward online learning program and campus coordinator championing student skill acceleration.",
     achievements: [
-      "Delivered live-coding walkthrough attended by 200+ engineering students",
-      "Shared open-source starter repository cloned by over 150 participants",
-      "Received highest attendee satisfaction rating in the web track (4.9/5.0)"
+      "Successfully coordinated the McKinsey Forward Program registration initiative for second-year students, engaging more than 270 students.",
+      "Completed rigorous digital curricula covering structured problem solving, digital fluency, and agile leadership.",
+      "Received the official McKinsey.org Forward credential."
+    ]
+  },
+  {
+    id: "journey-6",
+    period: "2025 — 2026",
+    role: "Volunteer — ICSIT Conference & Entusia 5.0",
+    organization: "Symbiosis International University",
+    category: "Volunteering",
+    description: "Active volunteer supporting international academic conferences and university cultural symposia.",
+    achievements: [
+      "Served on the Hospitality and Logistics Team for the International Conference on Smart Information Technology (ICSIT).",
+      "Assisted in stage management, guest facilitation, and crowd coordination for Entusia 5.0 annual festival."
     ]
   }
 ];
