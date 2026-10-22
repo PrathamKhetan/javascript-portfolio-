@@ -12,7 +12,7 @@ export function handleCors(req: Request, res: Response): boolean {
 
   const origin = req.headers.origin;
 
-  if (origin && (allowedOrigins.includes(origin) || allowedOrigins.includes('*'))) {
+  if (origin && (allowedOrigins.includes(origin) || origin.endsWith('.vercel.app') || allowedOrigins.includes('*'))) {
     res.setHeader('Access-Control-Allow-Origin', origin);
   } else if (!origin) {
     // Non-browser or server-to-server request

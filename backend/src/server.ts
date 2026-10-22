@@ -69,8 +69,9 @@ app.use((err: Error, _req: Request, res: Response, _next: NextFunction) => {
 
 // Start listening if run directly
 if (process.env.NODE_ENV !== 'test') {
-  app.listen(PORT, () => {
-    console.log(`\n⚡ Backend API server is running locally at: http://localhost:${PORT}`);
+  const portNum = Number(PORT) || 5001;
+  app.listen(portNum, '0.0.0.0', () => {
+    console.log(`\n⚡ Backend API server is running at: http://0.0.0.0:${portNum}`);
     console.log(`🌐 Ready for frontend connections from: ${process.env.FRONTEND_URL || 'http://localhost:5173'}\n`);
   });
 }
