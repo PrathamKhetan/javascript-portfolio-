@@ -32,8 +32,21 @@ export const initialAspirations = {
 
 export const initialJourneyTimeline: JourneyTimelineItem[] = [
   {
+    id: "journey-0",
+    period: "Sep 2026 — Nov 2026",
+    role: "Student Builder Campus Leader (SBCL)",
+    organization: "Amazon Web Services (AWS)",
+    category: "Internship",
+    description: "Selected as an AWS Student Builder Campus Leader for a six-week campus leadership program, driving cloud adoption and AWS Builder Center awareness across campus.",
+    achievements: [
+      "Drove 300+ AWS Builder Center sign-ups by introducing students to the platform and explaining its features, benefits, and learning opportunities.",
+      "Promoted AWS Builder Center awareness across campus through student engagement and technology-focused outreach initiatives.",
+      "Demonstrated ownership, communication, and leadership by encouraging students to explore AWS learning resources and builder opportunities."
+    ]
+  },
+  {
     id: "journey-1",
-    period: "May 2026 — June 2026",
+    period: "May 2026 — Jun 2026",
     role: "Cyber Security Intern",
     organization: "The Tata Power Company Limited (CENTEC)",
     category: "Internship",
@@ -42,7 +55,7 @@ export const initialJourneyTimeline: JourneyTimelineItem[] = [
       "Gained hands-on exposure to Application Security and Vulnerability Management across critical enterprise infrastructure.",
       "Studied OWASP Top 10, Web Application Security, MITRE ATT&CK framework, secure development practices, and vulnerability analysis.",
       "Explored enterprise security platforms including CrowdStrike Falcon, Cisco XDR, FortiRecon, Skyhigh DLP, AWS Security, and Zscaler.",
-      "Studied AI applications in modern cybersecurity and collaborated with senior security architects."
+      "Collaborated with security professionals and explored applications of Artificial Intelligence in cybersecurity."
     ]
   },
   {

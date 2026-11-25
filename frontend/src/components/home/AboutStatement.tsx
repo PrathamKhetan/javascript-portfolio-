@@ -102,7 +102,7 @@ export const AboutStatement: React.FC = () => {
             className="space-y-2 p-6 rounded-2xl bg-[var(--surface-color)] border border-[var(--border-color)]"
           >
             <div className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-[var(--text-color)]">
-              <CountUpNumber value={profile.stats?.cgpa ?? 9.0} decimals={1} suffix=" /10" />
+              <CountUpNumber value={profile.stats?.cgpa ?? 7.5} decimals={1} suffix=" /10" />
             </div>
             <p className="font-mono text-xs uppercase tracking-wider text-[var(--muted-color)]">
               Cumulative CGPA

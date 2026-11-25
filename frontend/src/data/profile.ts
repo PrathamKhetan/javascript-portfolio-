@@ -36,7 +36,7 @@ export const initialProfileData: ProfileData = {
   ],
   stats: {
     projects: 15,
-    cgpa: 9.0,
+    cgpa: 7.5,
     certificates: 12,
     hackathons: 6,
   },
